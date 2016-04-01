@@ -1,7 +1,42 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html>
 <head>
+  <meta charset="utf-8">
+
+  <title>freedom trail</title>
+  <meta name="description" content="A simple web game">
+  <meta name="viewport" content="width=device-width">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/input.js"></script>
+  <script type="text/javascript" src="js/data.js"></script>
+  <script type="text/javascript" src="js/game.js"></script>
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
+  <div class="game">
+    <h1>Freedom Trail</h1>
+    <div id="event">
+      <h2>score</h2>
+      <span id="score">0</span>
+      <div id="event-img"></div>
+      <p id="event-text"></p>
+    </div>
+    <div id="options">
+      <a id="option-0" class="disable" href="#">
+        <p id="option-0-text"></p>
+      </a>
+      <a id="option-1" class="disable" href="#">
+        <p id="option-1-text"></p>
+      </a>
+      <a id="option-2" class="disable" href="#">
+        <p id="option-2-text"></p>
+      </a>
+      <a id="option-3" class="disable" href="#">
+        <p id="option-3-text"></p>
+      </a>
+    </div>
+  </div>
+
 </body>
 </html>
