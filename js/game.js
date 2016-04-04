@@ -7,22 +7,15 @@
  *	fail()      -> advance() -> encounter()
  */
 
- /*
-you can fail through: 
-- having an event decrement your health (die on results screen)
-- losing health to upkeep (die on encounter page)
-
- */
-
 window.onload = function() {
 
 	var Game = function() {
-		this.encounter = 0; // id of active encounter
-		this.encounters = 0; // total # of encounters succeeded this game
+		this.encounter = 0;         // id of active encounter
+		this.encounters = 0;        // total # of encounters succeeded this game
 		this.screen = screen.START; // type of page we're on
-		this.score = 0; // the player's score
-		this.food = 10; // player food
-		this.health = 4; // player health, die at -1
+		this.score = 0;             // the player's score
+		this.food = 20;             // player food
+		this.health = 4;            // player health, -1 = ded
 	};
 
 	// clears UI text
@@ -35,7 +28,7 @@ window.onload = function() {
 		});
 	}
 
-	// get a random encounter that we haven't already gotten
+	// get a random encounter
 	function randomEncounter() {
 		return Math.floor((Math.random() * encounters.length));
 	}
@@ -145,7 +138,7 @@ window.onload = function() {
 	// this fires whenever the player clicks a button
 	// i is the index of the option clicked
 	function advance(i) {
-		
+
 		// reset text on screen
 		clearText();
 

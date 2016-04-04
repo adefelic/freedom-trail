@@ -76,7 +76,7 @@ var encounters = [
 		]
 	},
 	{
-		img: 'start.jpg',
+		img: 'cat.jpg',
 		text: 'a wealthy kitten!',
 		options: [
 			{
@@ -94,10 +94,35 @@ var encounters = [
 			},
 			{
 				text: 'flaunt your own wealth',
-				resulttext: 'now the cat is jealous and took some food',
+				resulttext: 'now the cat is jealous and took some of your hard-earned food',
 				health: 0,
 				food: -1,
 				causeofdeath: 'starvation'
+			},
+		]
+	},
+	{
+		img: 'old-state-house.png',
+		text: 'grab your camera, it\'s the OLD STATE HOUSE,',
+		options: [
+			{
+				text: 'grab your camera',
+				resulttext: 'dad\s going to love these photos',
+				health: 1,
+				food: 0
+			},
+			{
+				text: 'I hate history >:(',
+				resulttext: 'not by the end of this journey you won\'t!',
+				health: -1,
+				food: 0,
+				causeofdeath: 'not respecting this great city'
+			},
+			{
+				text: 'I love history :D',
+				resulttext: 'The Old State House was the center of all political life and debate in colonial Boston. On July 18, 1776, citizens gathered in the street to hear the Declaration of Independence read from the building\'s balcony, the first public reading in Massachusetts. The Royal Governor presided here until Thomas Gage left in 1775, and the seat of Massachusetts government resided here until the new State House was built on Beacon Hill in 1798.',
+				health: 0,
+				food: 0,
 			},
 		]
 	}
@@ -108,7 +133,10 @@ var wordsForNext = [
 	'onwards!',
 	'where to?',
 	'anyways,',
-	'moving on,'
+	'moving on,',
+	'now where were we...',
+	'anywho,',
+	'I think the next stop was ... this way?'
 ];
 
 var health = [
@@ -119,7 +147,8 @@ var health = [
 	'good',
 	'great',
 	'amazing',
-	'you are vitality itself'
+	'you are vitality itself',
+	'tom brady is jealous'
 ];
 
 var screen = {
