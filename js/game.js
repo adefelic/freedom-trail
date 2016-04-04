@@ -14,7 +14,7 @@ window.onload = function() {
 		this.encounters = 0;        // total # of encounters succeeded this game
 		this.screen = screen.START; // type of page we're on
 		this.score = 0;             // the player's score
-		this.food = 20;             // player food
+		this.food = 10;             // player food
 		this.health = 4;            // player health, -1 = ded
 	};
 
@@ -69,9 +69,40 @@ window.onload = function() {
 	function updateScore(i) {state.score += 10;}
 
 	function displayStatus() {
+		// colors!
+		var food = state.food;
+		if (food >= 10) {
+			$('#food').addClass('green');
+			$('#food').removeClass('yellow');
+			$('#food').removeClass('red');
+		} else if (food < 10 && food > 3) {
+			$('#food').removeClass('green');
+			$('#food').addClass('yellow');
+			$('#food').removeClass('red');
+		} else {
+			$('#food').removeClass('green');
+			$('#food').removeClass('yellow');
+			$('#food').addClass('red');
+		}
+		var hp = state.health;
+		if (hp >= 4) {
+			$('#health').addClass('green');
+			$('#health').removeClass('yellow');
+			$('#health').removeClass('red');
+		} else if (hp < 4 && hp > 2) {
+			$('#health').removeClass('green');
+			$('#health').addClass('yellow');
+			$('#health').removeClass('red');
+		} else {
+			$('#health').removeClass('green');
+			$('#health').removeClass('yellow');
+			$('#health').addClass('red');
+		}
+
+		// values!
 		$('#score').text(state.score);
-		$('#food').text(state.food);
-		$('#health').text(health[state.health]);
+		$('#food').text(food);
+		$('#health').text(health[hp]);
 	}
 
 	// encounter logic

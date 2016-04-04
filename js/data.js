@@ -20,32 +20,32 @@ var encounters = [
 			},
 			{
 				text: 'Ignore the Bunker Hill Monument and move on',
-				resulttext: 'instead of scoping the monument, you go to the Cookie Monstah food truck that\'s a few feet from the monument. This was the right choice.',
+				resulttext: 'Instead of scoping the monument, you go to the Cookie Monstah food truck that\'s a few feet from the monument. This was the right choice.',
 				health: 0,
-				food: 1
+				food: 4
 			},
 		]
 	},
 	{
 		img: 'boston-common.png',
 		title: 'The Boston Common',
-		text: 'you made it to the end of the trail! check out that sweet statue. wait, how did you get here again?',
+		text: 'You\'ve made it to the end of the trail! check out that sweet statue. wait, how did you get here again?',
 		options: [
 			{
-				text: 'admire the statue',
-				resulttext: 'the attention to detail is striking',
+				text: 'Admire the statue',
+				resulttext: 'The attention to detail is striking.',
 				health: 0,
 				food: 0
 			},
 			{
-				text: 'admire the greenery',
-				resulttext: 'smells like it was just cut, mmm',
-				health: 0,
+				text: 'Admire the greenery',
+				resulttext: 'The smell of freshly cut grass invigorates you.',
+				health: 1,
 				food: 0
 			},
 			{
-				text: 'go home',
-				resulttext: 'so long! we\'re sure you parked somewhere obvious, and will have no difficulty finding your car',
+				text: 'Go home',
+				resulttext: 'So long! We\'re sure you parked somewhere obvious, and will have no difficulty finding your car.',
 				health: 0,
 				food: 0
 			},
@@ -108,26 +108,26 @@ var encounters = [
 	{
 		img: 'old-state-house.png',
 		title: 'The Old State House',
-		text: 'grab your camera, it\'s the OLD STATE HOUSE,',
+		text: 'Grab your camera, it\'s the OLD STATE HOUSE,',
 		options: [
 			{
-				text: 'grab your camera',
-				resulttext: 'dad\s going to love these photos',
+				text: 'Grab your camera',
+				resulttext: 'dad\'s going to love these photos',
 				health: 1,
 				food: 0
 			},
 			{
-				text: 'I hate history >:(',
+				text: 'I love history!',
+				resulttext: 'The Old State House was the center of all political life and debate in colonial Boston. On July 18, 1776, citizens gathered in the street to hear the Declaration of Independence read from the building\'s balcony, the first public reading in Massachusetts. The Royal Governor presided here until Thomas Gage left in 1775, and the seat of Massachusetts government resided here until the new State House was built on Beacon Hill in 1798.',
+				health: 0,
+				food: 0,
+			},
+			{
+				text: 'I hate history!',
 				resulttext: 'Your ignorance wounds you.',
 				health: -1,
 				food: 0,
 				causeofdeath: 'not respecting this great city'
-			},
-			{
-				text: 'I love history :D',
-				resulttext: 'The Old State House was the center of all political life and debate in colonial Boston. On July 18, 1776, citizens gathered in the street to hear the Declaration of Independence read from the building\'s balcony, the first public reading in Massachusetts. The Royal Governor presided here until Thomas Gage left in 1775, and the seat of Massachusetts government resided here until the new State House was built on Beacon Hill in 1798.',
-				health: 0,
-				food: 0,
 			},
 		]
 	},
@@ -145,33 +145,6 @@ var encounters = [
 			},
 		]
 	},
-	/*
-	{
-		img: '',
-		text: 'look at all of these food options',
-		options: [
-			{
-				text: 'A burrito would sure hit the spot. Chipotle!',
-				resulttext: 'The burrito was as filling as it was infectious. Don\'t worry, the virus will take day or two to really kick in, so you\'ve still got time to see the rest of the sights that Boston has to offer! Probably!',
-				health: -1,
-				food: 8,
-				causeofdeath: 'norovirus'
-			},
-			{
-				text: 'Let\'s check out "The Table," the hip new restaurant from Top Chef\'s Carl Dooley',
-				resulttext: 'Your wallet maybe empty, but your stomach, it is full.',
-				health: 0,
-				food: 12,
-			},
-			{
-				text: 'grab your camera',
-				resulttext: 'dad\s going to love these photos',
-				health: 1,
-				food: 0
-			},
-		]
-	},
-	*/
 	{
 		img: 'chipotle-boston.jpg',
 		title: 'The Old Corner Bookstore',
@@ -181,7 +154,7 @@ var encounters = [
 				text: 'Dig into a hot, fresh Chipotle burrito; one with all of your favorite toppings.',
 				resulttext: 'The burrito was as filling as it was infectious. Don\'t worry, the virus will take day or two to really kick in, so you\'ve still got time to see the rest of this great city! Probably!',
 				health: -1,
-				food: 16,
+				food: 6,
 				causeofdeath: 'norovirus'
 			},
 		]
