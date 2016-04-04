@@ -9,25 +9,27 @@
 var encounters = [
 	{
 		img: 'bunker-hill-monument.png',
-		text: 'You are a settler, who must make their way through Boston\'s famous FREEDOM TRAIL. Good Luck!',
+		title: 'The Bunker Hill Monument',
+		text: 'Here you are, at the start of Boston\'s famous FREEDOM TRAIL. Good Luck!',
 		options: [
 			{
 				text: 'Look at the Bunker Hill Monument',
-				resulttext: 'sure is big',
+				resulttext: '"Don\'t fire until you see the whites of their eyes" is the legendary order attributed to Colonel William Prescott to make sure that each shot would count. The poorly trained and ill prepared colonial forces repelled two major assaults by the British Army before retreating. Almost half of the British soldiers were either killed or injured. Although the colonists lost the battle, their bravery and strong showing against the British encouraged them to fight on.',
 				health: 0,
 				food: 0
 			},
 			{
 				text: 'Ignore the Bunker Hill Monument and move on',
-				resulttext: 'life is too short for phallic memorials',
+				resulttext: 'instead of scoping the monument, you go to the Cookie Monstah food truck that\'s a few feet from the monument. This was the right choice.',
 				health: 0,
-				food: 0
+				food: 1
 			},
 		]
 	},
 	{
-		img: 'boston-commons.png',
-		text: 'you made it to the end of the trail! check out that sweet statue',
+		img: 'boston-common.png',
+		title: 'The Boston Common',
+		text: 'you made it to the end of the trail! check out that sweet statue. wait, how did you get here again?',
 		options: [
 			{
 				text: 'admire the statue',
@@ -51,6 +53,7 @@ var encounters = [
 	},
 	{
 		img: 'bear.jpg',
+		title: 'A bear!',
 		text: 'oh no there is a bear',
 		options: [
 			{
@@ -77,6 +80,7 @@ var encounters = [
 	},
 	{
 		img: 'cat.jpg',
+		title: 'A fat cat',
 		text: 'a wealthy kitten!',
 		options: [
 			{
@@ -103,6 +107,7 @@ var encounters = [
 	},
 	{
 		img: 'old-state-house.png',
+		title: 'The Old State House',
 		text: 'grab your camera, it\'s the OLD STATE HOUSE,',
 		options: [
 			{
@@ -125,6 +130,47 @@ var encounters = [
 				food: 0,
 			},
 		]
+	},
+	/*
+	{
+		img: '',
+		text: 'look at all of these food options',
+		options: [
+			{
+				text: 'A burrito would sure hit the spot. Chipotle!',
+				resulttext: 'The burrito was as filling as it was infectious. Don\'t worry, the virus will take day or two to really kick in, so you\'ve still got time to see the rest of the sights that Boston has to offer! Probably!',
+				health: -1,
+				food: 8,
+				causeofdeath: 'norovirus'
+			},
+			{
+				text: 'Let\'s check out "The Table," the hip new restaurant from Top Chef\'s Carl Dooley',
+				resulttext: 'Your wallet maybe empty, but your stomach, it is full.',
+				health: 0,
+				food: 12,
+			},
+			{
+				text: 'grab your camera',
+				resulttext: 'dad\s going to love these photos',
+				health: 1,
+				food: 0
+			},
+		]
+	},
+	*/
+	{
+		img: 'chipotle-boston.jpg',
+		title: 'The Old Corner Bookstore',
+		text: 'The Old Corner Bookstore was the publisher of many famous books, like Nathaniel Hawthorne\'s "The Scarlet Letter," or Henry David Thoreau\'s contemplative "Walden."\n Now it\'s a Chipotle!',
+		options: [
+			{
+				text: 'Dig into a hot, fresh Chipotle burrito; one with all of your favorite toppings.',
+				resulttext: 'The burrito was as filling as it was infectious. Don\'t worry, the virus will take day or two to really kick in, so you\'ve still got time to see the rest of this great city! Probably!',
+				health: -1,
+				food: 16,
+				causeofdeath: 'norovirus'
+			},
+		]
 	}
 ];
 
@@ -136,7 +182,9 @@ var wordsForNext = [
 	'moving on,',
 	'now where were we...',
 	'anywho,',
-	'I think the next stop was ... this way?'
+	'I think the next stop was ... this way?',
+	'I think I\m lost, who planned this city?',
+	'then I take a left at the Dunkin Donuts...'
 ];
 
 var health = [

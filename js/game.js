@@ -83,6 +83,8 @@ window.onload = function() {
 		$('#event-img').css('background-image', 'url(img/' + enc.img + ')');
 		// display encounter text
 		$('#event-text').text(enc.text);
+		// display encounter title
+		$('#event-title').text(enc.title);
 		// display encounter options; disable unused buttons
 		var optionCount = enc.options.length;
 		$('#options > a').each(function(i,el){

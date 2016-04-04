@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>freedom trail credits</title>
+  <meta name="description" content="A simple web game">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+	<p>Code and non-historical text by Adam DeFelice</p>
+	<p>Images and music by Ana Hurka-Robles</p>
+	<p>lots of text stolen from: <a href="http://www.cityofboston.gov/freedomtrail/default.asp">the city of Boston</a>.</p>
+</body>
+</html>
