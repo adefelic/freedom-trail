@@ -131,7 +131,7 @@ window.onload = function() {
 		// if there's an event result, display it
 		$('#event-text').text(resultText);
 		// display cause of death
-		$('#rip').text('you died of ' + causeofdeath);
+		$('#rip').text('you died of ' + causeofdeath + '. final score: ' + state.score);
 		// offer game reset
 		$('#option-0').removeClass('disable');
 		$('#option-0').children( 'p' ).text('try again?');

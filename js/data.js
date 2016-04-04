@@ -45,7 +45,7 @@ var encounters = [
 			},
 			{
 				text: 'go home',
-				resulttext: 'so long! we hope you enjoyed the sights and perils of the FREEDOM TRAIL!',
+				resulttext: 'so long! we\'re sure you parked somewhere obvious, and will have no difficulty finding your car',
 				health: 0,
 				food: 0
 			},
@@ -118,7 +118,7 @@ var encounters = [
 			},
 			{
 				text: 'I hate history >:(',
-				resulttext: 'not by the end of this journey you won\'t!',
+				resulttext: 'Your ignorance wounds you.',
 				health: -1,
 				food: 0,
 				causeofdeath: 'not respecting this great city'
@@ -183,8 +183,8 @@ var wordsForNext = [
 	'now where were we...',
 	'anywho,',
 	'I think the next stop was ... this way?',
-	'I think I\m lost, who planned this city?',
-	'then I take a left at the Dunkin Donuts...'
+	'I think I\'m lost, who planned this city?',
+	'wait, which Dunkin Donuts was I supposed to take a left at?'
 ];
 
 var health = [
