@@ -2,5 +2,5 @@
 
 an oregon-trail-alike
 
-uses mortar-game-stub boilerplate
+some button code from:
 https://github.com/mozilla/mortar-game-stub.git

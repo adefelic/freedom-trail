@@ -116,7 +116,10 @@ var health = [
 	'very poor',
 	'poor',
 	'fair',
-	'good'
+	'good',
+	'great',
+	'amazing',
+	'you are vitality itself'
 ];
 
 var screen = {
