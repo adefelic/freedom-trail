@@ -131,6 +131,20 @@ var encounters = [
 			},
 		]
 	},
+	{
+		img: 'storrowed.jpg',
+		title: 'Storrow Drive: Cars Only',
+		text: 'Looks like another truck driver didn\'t read the signs.',
+		options: [
+			{
+				text: 'Some flying wreckage gets you right in the gut.',
+				resulttext: 'And here we thought Boston drivers were the worst...',
+				health: -1,
+				food: 0,
+				causeofdeath: 'a storrowing'
+			},
+		]
+	},
 	/*
 	{
 		img: '',
@@ -169,6 +183,20 @@ var encounters = [
 				health: -1,
 				food: 16,
 				causeofdeath: 'norovirus'
+			},
+		]
+	},
+	{
+		img: 'snow.jpg',
+		title: '\'Snow Problem',
+		text: 'You can tell it\'s spring in Boston when the leaves start to bud, and crashing deluges of snow and ice fall from every cloud.',
+		options: [
+			{
+				text: 'When does it warm up around here??',
+				resulttext: 'Every other day until July.',
+				health: -1,
+				food: 0,
+				causeofdeath: 'an average New England winter'
 			},
 		]
 	}
