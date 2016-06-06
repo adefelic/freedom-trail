@@ -1,6 +1,8 @@
 # freedom trail game
 
-an oregon-trail-alike
+something between a click-venture and oregon trail
 
-some button code from:
+maybe one day a choose-your-adventure wordpress plugin?
+
+some as-of-yet unused button code from:
 https://github.com/mozilla/mortar-game-stub.git
