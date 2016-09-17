@@ -20,7 +20,7 @@ var encounters = [
 			},
 			{
 				text: 'Ignore the Bunker Hill Monument and move on',
-				resulttext: 'Instead of scoping the monument, you go to the Cookie Monstah food truck that\'s a few feet from the monument. This was the right choice.',
+				resulttext: 'Instead of scoping the monument, you go to the Cookie Monstah food truck a few feet away. This was the right choice.',
 				health: 0,
 				food: 4
 			},
@@ -138,7 +138,7 @@ var encounters = [
 		options: [
 			{
 				text: 'Some flying wreckage gets you right in the gut.',
-				resulttext: 'And here we thought Boston drivers were the worst...',
+				resulttext: 'moving day is the worst',
 				health: -1,
 				food: 0,
 				causeofdeath: 'a storrowing'
@@ -162,11 +162,11 @@ var encounters = [
 	{
 		img: 'snow.jpg',
 		title: '\'Snow Problem',
-		text: 'You can tell it\'s spring in Boston when the leaves start to bud, and crashing deluges of snow and ice fall from every cloud.',
+		text: 'You can tell it\'s spring in Boston when the leaves start to bud, and snow continues to crash from the sky.',
 		options: [
 			{
 				text: 'When does it warm up around here??',
-				resulttext: 'Every other day until July.',
+				resulttext: 'Suddenly, in July.',
 				health: -1,
 				food: 0,
 				causeofdeath: 'an average New England winter'
@@ -206,4 +206,3 @@ var screen = {
 	FAIL: 2,
 	START: 3
 };
-
