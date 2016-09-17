@@ -3,7 +3,7 @@
  * THE FLOW:
  *	do one of these three things:
  *	encounter() -> advance() -> results() or fail()
- *  results()   -> advance() -> encounter() or fail()
+ *	results()   -> advance() -> encounter() or fail()
  *	fail()      -> advance() -> encounter()
  */
 
